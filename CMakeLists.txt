@@ -203,4 +203,4 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 add_executable(img_publish src/camera_publisher.cpp)
-target_link_libraries(img_publish ${catkin_LIBRARIES})
+target_link_libraries(img_publish ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
